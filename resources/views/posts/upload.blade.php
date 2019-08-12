@@ -46,7 +46,7 @@
                 <h4 class="mb-3">Document Type</h4>
                 <div class="col-lg-0">
                     {{-- {{  Form::checkbox('doc', ['adhaar' => 'ADHAAR', 'license' => 'DRIVING LICENSE', 'id' => 'ID'],  '', ['class' => 'form-control' ]) }} --}}
-                    {{ Form::checkbox('aadhar', 'aadhar',false, ['id'=>'aadhar']) }}
+                    {{ Form::checkbox('doc', 'aadhar',false, ['id'=>'aadhar']) }}
                     {!! Form::label('aadhar', 'Aadhar Card') !!} <br>
                     {{ Form::checkbox('license', 'license',false, ['id'=>'license']) }}
                     {!! Form::label('license', 'Driving License') !!} <br>

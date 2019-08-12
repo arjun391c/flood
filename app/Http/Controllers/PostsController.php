@@ -36,7 +36,7 @@ class PostsController extends Controller
      */
     public function store(Request $request)
      {
-
+        // return $request;
         $this->validate($request,[
             'name'=>'required',
             'phone'=>'required|numeric|digits:10',
@@ -52,9 +52,9 @@ class PostsController extends Controller
         $post->name = $request->input('name');
         $post->phone = $request->input('phone');
         $post->email = $request->input('email');
-        $post->email = $request->input('doc');
-        $post->dname = $request->input('dfname');
-        $post->dname = $request->input('dlname');
+        $post->doc = $request->input('aadhar');
+        $post->dfname = $request->input('dfname');
+        $post->dlname = $request->input('dlname');
         $post->pincode = $request->input('pincode');
         $post->dob = $request->input('dob');
         $post->age = $request->input('age');

@@ -21,7 +21,7 @@
                         <ul class="list-group mb-3">
                           <li class="list-group-item d-flex justify-content-between lh-condensed">
                             <div class="row">
-                              <h6 class=" text-dark">Holder Name</h6> <br>
+                              <h6 class=" text-dark">Name on document</h6> <br>
                               <!-- <p class="text-muted">Enter your name</p> -->
                               <input type="text" id="name" class="form-control"/>
                             </div>
@@ -136,7 +136,9 @@
 
 
     </div>
+    {{$posts}}
     </main>
+
     <script>
         // var data = [
         //         {
@@ -241,6 +243,14 @@
             if ( table.column(1).search() !== this.value ) {
                 table
                     .column(1)
+                    .search( this.value )
+                    .draw();
+            }
+        } );
+        $('#doc').on( 'keyup change', function () {
+            if ( table.column(0).search() !== this.value ) {
+                table
+                    .column(0)
                     .search( this.value )
                     .draw();
             }
