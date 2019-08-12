@@ -10767,7 +10767,8 @@ body {
 }
 
 tr,
-th {
+th,
+h6 {
   color: black;
 }
 
