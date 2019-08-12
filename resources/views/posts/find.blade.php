@@ -3,6 +3,11 @@
 
 
 @section('content')
+<style>
+#data-table-keytable_filter{
+    display: none;
+}
+</style>
 <main role="main" class="inner cover" style="padding:20px">
     <div class="container">
         <div class="py-5 text-center">
@@ -13,7 +18,7 @@
 
         <div class="row">
 
-                <div class="jumbotron col-md-5 order-md-2 mb-6 ml-md-2">
+                {{-- <div class="jumbotron col-md-5 order-md-2 mb-6 ml-md-2">
                         <h4 class="d-flex justify-content-between align-items-center mb-3">
                           <span class="text-muted">Search here</span>
 
@@ -54,8 +59,8 @@
                             <span>Total (USD)</span>
                             <strong>$20</strong>
                           </li> -->
-                        </ul>
-                    
+                        </ul> --}}
+
                         <!-- <form class="card p-2">
                           <div class="input-group">
                             <input type="text" class="form-control" placeholder="Promo code">
@@ -110,6 +115,53 @@
               {{ Form::close() }}
           </div> --}}
           <div class="jumbotron chat-body chat-scroll" id="chat-scroll" style="color:black">
+                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="text-muted">Search here</span>
+
+                      </h4>
+                      <div class="row mb-2">
+                          <div class="col-md-4">
+                                <h6 class=" text-dark">Name on document</h6>
+                                <!-- <p class="text-muted">Enter your name</p> -->
+                                <input type="text" id="name" class="form-control"/>
+                          </div>
+                          <div class="col-md-4">
+                                <h6 class="text-dark">Document Type</h6>
+                                <!-- <small class="text-muted">Brief description</small> -->
+                                <input type="text" id="doc" class="form-control"/>
+                          </div>
+                          <div class="col-md-4">
+                                <h6 class="text-dark">Document Number</h6>
+                                <!-- <small class="text-muted">Brief description</small> -->
+                                <input type="text" id="docNo" class="form-control"/>
+                          </div>
+                      </div>
+                      {{-- <ul class="list-group mb-3">
+                        <li class="list-group-item d-flex justify-content-between lh-condensed">
+                          <div class="row">
+                            <h6 class=" text-dark">Name on document</h6> <br>
+                            <!-- <p class="text-muted">Enter your name</p> -->
+                            <input type="text" id="name" class="form-control"/>
+                          </div>
+                          <!-- <span class="text-muted">$12</span> -->
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-condensed">
+                          <div class="row">
+                            <h6 class="text-dark">Document Type</h6>
+                            <!-- <small class="text-muted">Brief description</small> -->
+                            <input type="text" id="doc" class="form-control"/>
+                          </div>
+                          <!-- <span class="text-muted">$8</span> -->
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-condensed">
+                          <div class="row">
+                            <h6 class="text-dark">Document Number</h6>
+                            <!-- <small class="text-muted">Brief description</small> -->
+                            <input type="text" id="docNo" class="form-control"/>
+                          </div>
+                          <!-- <span class="text-muted">$5</span> -->
+                        </li> --}}
+
           <table id="data-table-keytable" class="table table-striped table-bordered" >
                 <thead>
                     <tr style="color:black">
@@ -136,7 +188,7 @@
 
 
     </div>
-    {{$posts}}
+
     </main>
 
     <script>

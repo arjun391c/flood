@@ -10676,7 +10676,6 @@ html,
 body {
   height: 100%;
   background-color: #333;
-  background-repeat: no-repeat;
 }
 
 body {
@@ -10770,5 +10769,24 @@ tr,
 th,
 h6 {
   color: black;
+}
+
+@media only screen and (min-width: 900px) {
+  #logo {
+    width: 10em;
+    position: absolute;
+    margin-top: 1.5em;
+    margin-left: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 899px) {
+  #logo {
+    width: 10em;
+    position: absolute;
+    margin-top: 1.5em;
+    margin-left: 1.5em;
+    margin-right: 1em;
+  }
 }
 
