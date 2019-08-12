@@ -10676,6 +10676,7 @@ html,
 body {
   height: 100%;
   background-color: #333;
+  background-image: url("/images/bg.png") !important;
 }
 
 body {
@@ -10735,10 +10736,6 @@ body {
  * Cover
  */
 
-.cover {
-  padding: 0 1.5rem;
-}
-
 .cover .btn-lg,
 .cover .btn-group-lg > .btn {
   padding: 0.75rem 1.25rem;
@@ -10766,7 +10763,8 @@ body {
 
 tr,
 th,
-h6 {
+h6,
+h5 {
   color: black;
 }
 
@@ -10787,5 +10785,21 @@ h6 {
     margin-left: 1.5em;
     margin-right: 1em;
   }
+}
+
+#jmb {
+  background-color: #333;
+  box-shadow: inset 0 0 2rem rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin: 0;
+}
+
+#hmj {
+  background: #4e4c4c;
+  text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+  padding: 50px;
+  border-radius: 10px;
+  border: 2px solid #333;
 }
 
