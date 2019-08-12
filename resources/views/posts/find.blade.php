@@ -20,27 +20,30 @@
                         </h4>
                         <ul class="list-group mb-3">
                           <li class="list-group-item d-flex justify-content-between lh-condensed">
-                            <div>
-                              <h6 class="my-0">Product name</h6>
-                              <small class="text-muted">Brief description</small>
+                            <div class="row">
+                              <h6 class=" text-dark">Holder Name</h6> <br>
+                              <!-- <p class="text-muted">Enter your name</p> -->
+                              <input type="text" id="name" class="form-control"/>
                             </div>
-                            <span class="text-muted">$12</span>
+                            <!-- <span class="text-muted">$12</span> -->
                           </li>
                           <li class="list-group-item d-flex justify-content-between lh-condensed">
-                            <div>
-                              <h6 class="my-0">Second product</h6>
-                              <small class="text-muted">Brief description</small>
+                            <div class="row">
+                              <h6 class="text-dark">Document Type</h6>
+                              <!-- <small class="text-muted">Brief description</small> -->
+                              <input type="text" id="doc" class="form-control"/>
                             </div>
-                            <span class="text-muted">$8</span>
+                            <!-- <span class="text-muted">$8</span> -->
                           </li>
                           <li class="list-group-item d-flex justify-content-between lh-condensed">
-                            <div>
-                              <h6 class="my-0">Third item</h6>
-                              <small class="text-muted">Brief description</small>
+                            <div class="row">
+                              <h6 class="text-dark">Document Number</h6>
+                              <!-- <small class="text-muted">Brief description</small> -->
+                              <input type="text" id="docNo" class="form-control"/>
                             </div>
-                            <span class="text-muted">$5</span>
+                            <!-- <span class="text-muted">$5</span> -->
                           </li>
-                          <li class="list-group-item d-flex justify-content-between bg-light">
+                          <!-- <li class="list-group-item d-flex justify-content-between bg-light">
                             <div class="text-success">
                               <h6 class="my-0">Promo code</h6>
                               <small>EXAMPLECODE</small>
@@ -50,17 +53,17 @@
                           <li class="list-group-item d-flex justify-content-between">
                             <span>Total (USD)</span>
                             <strong>$20</strong>
-                          </li>
+                          </li> -->
                         </ul>
-
-                        <form class="card p-2">
+                    
+                        <!-- <form class="card p-2">
                           <div class="input-group">
                             <input type="text" class="form-control" placeholder="Promo code">
                             <div class="input-group-append">
                               <button type="submit" class="btn btn-secondary">Redeem</button>
                             </div>
                           </div>
-                        </form>
+                        </form> -->
                       </div>
 
           {{-- <div class="col-md-8 order-md-1">
@@ -233,6 +236,15 @@
         $(this).html('');
     }
     } );
+
+    $('#name').on( 'keyup change', function () {
+            if ( table.column(1).search() !== this.value ) {
+                table
+                    .column(1)
+                    .search( this.value )
+                    .draw();
+            }
+        } )
 
 //     var table = $('#example').DataTable( {
 //         orderCellsTop: true,
