@@ -10760,3 +10760,10 @@ body {
   color: white !important;
 }
 
+.chat-scroll {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  overflow-y: auto;
+}
+

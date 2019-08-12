@@ -119,3 +119,10 @@ body {
     // border: 2px solid black;
     // border-radius: 10px;
 }
+
+.chat-scroll {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    overflow-y: auto;
+}
