@@ -10,13 +10,14 @@
 </style>
 <main role="main" class="inner cover" style="padding:20px">
     <div class="container">
-        <div class="py-5 text-center">
+        {{-- <div class="py-5 text-center">
 
-          <h2>Find your stuff</h2>
-          {{-- <p class="lead">Lets know your details</p> --}}
-        </div>
+          <h2>Find it</h2>
 
-        <div class="row">
+        </div> --}}
+
+
+        <div class="row mb-md-2" >
 
                 {{-- <div class="jumbotron col-md-5 order-md-2 mb-6 ml-md-2">
                         <h4 class="d-flex justify-content-between align-items-center mb-3">
@@ -119,7 +120,7 @@
                         <span class="text-muted">Search here</span>
 
                       </h4>
-                      <div class="row mb-2">
+                      <div class="row mb-2" >
                           <div class="col-md-4">
                                 <h6 class=" text-dark">Name on document</h6>
                                 <!-- <p class="text-muted">Enter your name</p> -->

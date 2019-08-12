@@ -4,7 +4,7 @@
 
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         @include('inc.nav')
-        <main role="main" class="inner cover">
+        <main role="main" class="jumbotron inner cover text-center" id="hmj">
           <h1 class="cover-heading">LETS FIND</h1>
           <p class="lead">Lets help find their stuffs</p>
           <p class="lead">
