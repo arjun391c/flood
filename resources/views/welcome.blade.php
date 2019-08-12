@@ -1,11 +1,16 @@
 @extends('layouts.app')
+@include('inc.nav')
 
 @section('content')
-
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-        @include('inc.nav')
+<style>
+body{
+  overflow-y: hidden;
+}
+</style>
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto  flex-column" style="margin-top:10%">
+        
         <main role="main" class="jumbotron inner cover text-center" id="hmj">
-          <h1 class="cover-heading">LETS FIND</h1>
+          <h1 class="cover-heading">LET'S FIND</h1>
           <p class="lead">Lets help find their stuffs</p>
           <p class="lead">
             <a href="/posts/upload" class="btn  btn-primary">Upload</a>

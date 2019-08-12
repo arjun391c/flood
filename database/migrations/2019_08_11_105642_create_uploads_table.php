@@ -15,16 +15,16 @@ class CreateUploadsTable extends Migration
     {
         Schema::create('uploads', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
+            $table->string('name',50);
             $table->double('phone');
-            $table->string('email');
-            $table->string('doc');
-            $table->string('dfname');
-            $table->string('dlname');
-            $table->integer('pincode');
-            $table->date('dob');
-            $table->integer('age');
-            $table->string('pname');
+            $table->string('email')->nullable();
+            $table->string('doc',100)->nullable();
+            $table->string('dno')->nullable();
+            $table->string('dfname',50);
+            $table->string('dlname',50);
+            $table->integer('pincode')->nullable();
+            $table->date('dob')->nullable();
+            $table->string('pname',50)->nullable();
             $table->timestamps();
         });
     }

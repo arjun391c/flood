@@ -11,19 +11,20 @@
 
         <div class="row">
 
-                <div class="jumbotron col-md-5 order-md-2 mb-6 ml-md-2">
+                <div class="jumbotron col-md-5  mb-6 mr-md-5">
                         <h4 class="d-flex justify-content-between align-items-center mb-3">
                           <span class="text-muted">Whom to Contact</span>
                         </h4>
                         <hr>
                         <ul class="list-group mb-3">
+                       
                           <li class="list-group-item d-flex justify-content-between lh-condensed">
                             <div>
                               <h6 class="my-0">Name</h6>
-
                             </div>
                             <span class="text-muted">{{$post->name}}</span>
                           </li>
+                         
                           <li class="list-group-item d-flex justify-content-between lh-condensed">
                                 <div>
                                   <strong><h6 class="my-0">Phone</h6></strong>
@@ -31,6 +32,8 @@
                                 </div>
                                 <span class="text-muted">{{$post->phone}}</span>
                           </li>
+                          
+                          @if($post->email)
                           <li class="list-group-item d-flex justify-content-between lh-condensed">
                                 <div>
                                   <strong><h6 class="my-0">Email</h6></strong>
@@ -42,27 +45,21 @@
                                     <small class="text-muted">No email specified</small>
                                 @endif
                            </li>
+                           @endif
 
 
                         </ul>
-{{-- -
-                        <form class="card p-2">
-                          <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Promo code">
-                            <div class="input-group-append">
-                              <button type="submit" class="btn btn-secondary">Redeem</button>
-                            </div>
-                          </div>
-                        </form>--}}
+
                       </div>
 
 
-                    <div class="jumbotron col-md-5 order-md-2 mb-6 ml-md-2">
+                    <div class="jumbotron col-md-5  mb-6 ml-md-5">
                             <h4 class="d-flex justify-content-between align-items-center mb-3">
                         <span class="text-muted">Search Results</span>
                       </h4>
                       <hr>
                       <ul class="list-group mb-3">
+                      @if($post->dfname)
                         <li class="list-group-item d-flex justify-content-between lh-condensed">
                           <div>
                             <h6 class="my-0">Name as on document</h6>
@@ -70,6 +67,8 @@
                           </div>
                           <span class="text-muted">{{$post->dfname}}. {{$post->dlname}}</span>
                         </li>
+                        @endif
+                        @if($post->doc)
                         <li class="list-group-item d-flex justify-content-between lh-condensed">
                               <div>
                                 <strong><h6 class="my-0">Document Type</h6></strong>
@@ -77,6 +76,8 @@
                               </div>
                               <span class="text-muted">{{$post->doc}}</span>
                         </li>
+                        @endif
+                        @if($post->pincode)
                         <li class="list-group-item d-flex justify-content-between lh-condensed">
                               <div>
                                 <strong><h6 class="my-0">Pincode</h6></strong>
@@ -84,6 +85,8 @@
                               </div>
                                   <small class="text-muted">{{$post->pincode}}</small>
                         </li>
+                        @endif
+                        @if($post->dob)
 
                         <li class="list-group-item d-flex justify-content-between lh-condensed">
                                 <div>
@@ -92,6 +95,8 @@
                                 </div>
                                     <small class="text-muted">{{$post->dob}}</small>
                           </li>
+                          @endif
+                        @if($post->pname)
                           <li class="list-group-item d-flex justify-content-between lh-condensed">
                                 <div>
                                   <strong><h6 class="my-0">Parent Name</h6></strong>
@@ -99,6 +104,7 @@
                                 </div>
                                     <small class="text-muted">{{$post->pname}}</small>
                           </li>
+                          @endif
 
 
 

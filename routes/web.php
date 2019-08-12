@@ -12,20 +12,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PagesController@index');
 
 Route::get('/posts/upload', function () {
     return view('posts.upload');
 });
 
-Route::get('/terms', function () {
-    return view('/terms');
-});
-//Route::get('/posts/find/{id}/view', function ($id) {
-  //  return view('')
 
-//});
+
 
 Route::resource('posts', 'PostsController');

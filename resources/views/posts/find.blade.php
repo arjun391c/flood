@@ -7,6 +7,9 @@
 #data-table-keytable_filter{
     display: none;
 }
+#data-table-keytable{
+  display: none;
+}
 </style>
 <main role="main" class="inner cover" style="padding:20px">
     <div class="container">
@@ -19,170 +22,66 @@
 
         <div class="row mb-md-2" >
 
-                {{-- <div class="jumbotron col-md-5 order-md-2 mb-6 ml-md-2">
-                        <h4 class="d-flex justify-content-between align-items-center mb-3">
-                          <span class="text-muted">Search here</span>
+               
 
-                        </h4>
-                        <ul class="list-group mb-3">
-                          <li class="list-group-item d-flex justify-content-between lh-condensed">
-                            <div class="row">
-                              <h6 class=" text-dark">Name on document</h6> <br>
-                              <!-- <p class="text-muted">Enter your name</p> -->
-                              <input type="text" id="name" class="form-control"/>
-                            </div>
-                            <!-- <span class="text-muted">$12</span> -->
-                          </li>
-                          <li class="list-group-item d-flex justify-content-between lh-condensed">
-                            <div class="row">
-                              <h6 class="text-dark">Document Type</h6>
-                              <!-- <small class="text-muted">Brief description</small> -->
-                              <input type="text" id="doc" class="form-control"/>
-                            </div>
-                            <!-- <span class="text-muted">$8</span> -->
-                          </li>
-                          <li class="list-group-item d-flex justify-content-between lh-condensed">
-                            <div class="row">
-                              <h6 class="text-dark">Document Number</h6>
-                              <!-- <small class="text-muted">Brief description</small> -->
-                              <input type="text" id="docNo" class="form-control"/>
-                            </div>
-                            <!-- <span class="text-muted">$5</span> -->
-                          </li>
-                          <!-- <li class="list-group-item d-flex justify-content-between bg-light">
-                            <div class="text-success">
-                              <h6 class="my-0">Promo code</h6>
-                              <small>EXAMPLECODE</small>
-                            </div>
-                            <span class="text-success">-$5</span>
-                          </li>
-                          <li class="list-group-item d-flex justify-content-between">
-                            <span>Total (USD)</span>
-                            <strong>$20</strong>
-                          </li> -->
-                        </ul> --}}
-
-                        <!-- <form class="card p-2">
-                          <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Promo code">
-                            <div class="input-group-append">
-                              <button type="submit" class="btn btn-secondary">Redeem</button>
-                            </div>
-                          </div>
-                        </form> -->
+                        
                       </div>
 
-          {{-- <div class="col-md-8 order-md-1">
-            <hr class="mb-4">
-            <h4 class="mb-3">Details As on document</h4>
-            {{ Form::open(array('action' => 'PostsController@store','method'=>'POST','enctype' => 'multipart/form-data')) }}
+         
 
-            <div class="row">
-                    <div class="col-md-6 mb-3">
-                       {{Form::label('dfname','Name')}}
-                      {{Form::text('dfname','',['class' =>'form-control','placeholder' =>'Enter Name'])}}
-                        </div>
-                        <div class="col-md-6 mb-3">
-                                {{Form::label('dlname','Name')}}
-                                {{Form::text('dlname','',['class' =>'form-control','placeholder' =>'Enter Name'])}}
-                        </div>
-                </div>
-            <div class="form-group">
-                    {{Form::label('pincode','Pin Code')}}
-                    {{Form::number('pincode','',['class' =>'form-control','placeholder' =>'- - - - - -'])}}
-            </div>
-
-            <div class="form-group">
-                    {{Form::label('dob','Date of Birth')}}
-                    {{Form::date('dob','',['class' =>'form-control','placeholder' =>'Enter Name'])}}
-                </div> --}}
-
-            {{-- <div class="form-group">
-                        {{Form::label('age','Age')}}
-                        {{Form::number('age','',['class' =>'form-control','placeholder' =>'- -'])}}
-
-            </div> --}}
-            {{-- <div class="form-group">
-                    {{Form::label('pname','Parent name')}}
-                    {{Form::text('pname','',['class' =>'form-control','placeholder' =>'Enter Name'])}}
-            </div>
-            <br>
-            <br>
-
-              <hr class="mb-4">
-
-              {{Form::submit('search',['class'=>'btn btn-primary btn-lg btn-block'])}}
-
-              {{ Form::close() }}
-          </div> --}}
+           
           <div class="jumbotron chat-body chat-scroll" id="chat-scroll" style="color:black">
                 <h4 class="d-flex justify-content-between align-items-center mb-3">
                         <span class="text-muted">Search here</span>
 
                       </h4>
                       <div class="row mb-2" >
-                          <div class="col-md-4">
-                                <h6 class=" text-dark">Name on document</h6>
-                                <!-- <p class="text-muted">Enter your name</p> -->
-                                <input type="text" id="name" class="form-control"/>
-                          </div>
-                          <div class="col-md-4">
+                      <div class="col-md-4">
                                 <h6 class="text-dark">Document Type</h6>
                                 <!-- <small class="text-muted">Brief description</small> -->
                                 <input type="text" id="doc" class="form-control"/>
                           </div>
                           <div class="col-md-4">
+                                <h6 class=" text-dark">Name on document</h6>
+                                <!-- <p class="text-muted">Enter your name</p> -->
+                                <input type="text" id="name" class="form-control"/>
+                          </div>
+                          
+                          <div class="col-md-4">
                                 <h6 class="text-dark">Document Number</h6>
                                 <!-- <small class="text-muted">Brief description</small> -->
-                                <input type="text" id="docNo" class="form-control"/>
+                                <input type="text" id="dno" class="form-control"/>
+                          </div>
+                          <div class="col-md-4 mt-2">
+                                <h6 class="text-dark">DOB</h6>
+                                <!-- <small class="text-muted">Brief description</small> -->
+                                <input type="date" id="dob" class="form-control"/>
+                          </div>
+                          <div class="col-md-4 mt-2">
+                                <h6 class="text-dark">Pincode</h6>
+                                <!-- <small class="text-muted">Brief description</small> -->
+                                <input type="text" id="pincode" class="form-control"/>
                           </div>
                       </div>
-                      {{-- <ul class="list-group mb-3">
-                        <li class="list-group-item d-flex justify-content-between lh-condensed">
-                          <div class="row">
-                            <h6 class=" text-dark">Name on document</h6> <br>
-                            <!-- <p class="text-muted">Enter your name</p> -->
-                            <input type="text" id="name" class="form-control"/>
-                          </div>
-                          <!-- <span class="text-muted">$12</span> -->
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between lh-condensed">
-                          <div class="row">
-                            <h6 class="text-dark">Document Type</h6>
-                            <!-- <small class="text-muted">Brief description</small> -->
-                            <input type="text" id="doc" class="form-control"/>
-                          </div>
-                          <!-- <span class="text-muted">$8</span> -->
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between lh-condensed">
-                          <div class="row">
-                            <h6 class="text-dark">Document Number</h6>
-                            <!-- <small class="text-muted">Brief description</small> -->
-                            <input type="text" id="docNo" class="form-control"/>
-                          </div>
-                          <!-- <span class="text-muted">$5</span> -->
-                        </li> --}}
+                      
 
           <table id="data-table-keytable" class="table table-striped table-bordered" >
                 <thead>
                     <tr style="color:black">
 
 
-
+                        <th class="text-nowrap">Document Number</th>
                         <th class="text-nowrap">Document</th>
                         <th class="text-nowrap">Name</th>
+                        <th class="text-nowrap">DOB</th>
+                        <th class="text-nowrap">Pincode</th>
                         <th class="text-nowrap">Contact</th>
                     </tr>
                 </thead>
                 <tbody>
 
                 </tbody>
-                {{-- <tfoot>
-                        <th class="text-nowrap">#</th>
-                        <th class="text-nowrap">Document</th>
-                        <th class="text-nowrap">Name</th>
-                        <th class="text-nowrap">Contact</th>
-                </tfoot> --}}
+                
             </table>
 
         </div>
@@ -223,26 +122,34 @@
                         orderCellsTop: true,
                         fixedHeader: true,
                         columns: [
-                        //     {
-                        //     "searchable": false,
-                        //     "orderable": true,
-                        //     'render': function(){
-                        //         return i++;
-                        //     }
-                        // },
+                            {
+                              "visible": false,
+                              "data": "dno",
+                            "searchable": true,
+                            "orderable": false,
+                            "render": function(dno){
+                                if(dno){
+                                  return dno;
+                                }else{
+                                  return '#!&*$';
+                                }
+                            }
+                        },
                         {
 
                             "orderable": false,
                             'data': 'doc',
                             'render': function(doc) {
                                 if(doc){
-                                    // var code = '<ul>';
-                                    // items.forEach(item => {
-                                    //     code += '<li>'+item.type+'</li><ul><li>Holder\'s Name: '+item.name+'</li><li>Document Number: '+item.number+'</li></ul>';
+                                    var code = '<ul>';
+                                    var itemNames
+                                    itemNames = doc.split(" ");
+                                    itemNames.forEach(item => {
+                                        code += '<li>'+item+'</li>';
 
-                                    // });
-                                    // code += '</ul>';
-                                    return doc;
+                                    });
+                                    code += '</ul>';
+                                    return code;
                                 }else{
                                     return 'No Item details';
                                 }
@@ -257,6 +164,32 @@
                                     return name.dfname+' '+name.dlname;
                                 }else{
                                     return 'Status unknown';
+                                }
+                            }
+                        },
+                        {
+                              "visible": false,
+                              "data": "dob",
+                            "searchable": true,
+                            "orderable": false,
+                            "render": function(dob){
+                                if(dob){
+                                  return dob;
+                                }else{
+                                  return '#!&*$###$%^';
+                                }
+                            }
+                        },
+                        {
+                              "visible": false,
+                              "data": "pincode",
+                            "searchable": true,
+                            "orderable": false,
+                            "render": function(pincode){
+                                if(pincode){
+                                  return pincode;
+                                }else{
+                                  return '#!&*$###$%^';
                                 }
                             }
                         },{
@@ -291,23 +224,83 @@
         $(this).html('');
     }
     } );
-
+    var pincode = $('#pincode').val();
+       var dob = $('#dob').val();
+       var dno = $('#dno').val();
+       var name = $('#name').val();
+       var type = $('#doc').val();
     $('#name').on( 'keyup change', function () {
+            if ( table.column(2).search() !== this.value ) {
+                table
+                    .column(2)
+                    .search( this.value )
+                    .draw();
+                    $('#data-table-keytable').css("display", "block");
+            }
+            if(($('#pincode').val() == "")&&($('#dob').val() == "")&&($('#dno').val() == "")&&($('#name').val() == "")&&($('#doc').val() == "")){
+          
+          $('#data-table-keytable').css("display", "none");
+    }
+            
+        } );
+        $('#doc').on( 'keyup change', function () {
             if ( table.column(1).search() !== this.value ) {
                 table
                     .column(1)
                     .search( this.value )
                     .draw();
+                    $('#data-table-keytable').css("display", "block");
             }
+            if(($('#pincode').val() == "")&&($('#dob').val() == "")&&($('#dno').val() == "")&&($('#name').val() == "")&&($('#doc').val() == "")){
+          
+          $('#data-table-keytable').css("display", "none");
+    }
+            
         } );
-        $('#doc').on( 'keyup change', function () {
+        $('#dno').on( 'keyup change', function () {
             if ( table.column(0).search() !== this.value ) {
                 table
                     .column(0)
                     .search( this.value )
                     .draw();
+                    $('#data-table-keytable').css("display", "block");
             }
-        } )
+            if(($('#pincode').val() == "")&&($('#dob').val() == "")&&($('#dno').val() == "")&&($('#name').val() == "")&&($('#doc').val() == "")){
+          
+          $('#data-table-keytable').css("display", "none");
+    }
+            
+        } );
+        $('#dob').on( 'keyup change', function () {
+            if ( table.column(3).search() !== this.value ) {
+                table
+                    .column(3)
+                    .search( this.value )
+                    .draw();
+                    $('#data-table-keytable').css("display", "block");
+            }
+            if(($('#pincode').val() == "")&&($('#dob').val() == "")&&($('#dno').val() == "")&&($('#name').val() == "")&&($('#doc').val() == "")){
+          
+          $('#data-table-keytable').css("display", "none");
+    }
+            
+        } );
+        $('#pincode').on( 'keyup change', function () {
+            if ( table.column(4).search() !== this.value ) {
+                table
+                    .column(4)
+                    .search( this.value )
+                    .draw();
+                    $('#data-table-keytable').css("display", "block");
+            }
+            if(($('#pincode').val() == "")&&($('#dob').val() == "")&&($('#dno').val() == "")&&($('#name').val() == "")&&($('#doc').val() == "")){
+          
+          $('#data-table-keytable').css("display", "none");
+    }
+            
+        } );
+       
+        
 
 //     var table = $('#example').DataTable( {
 //         orderCellsTop: true,

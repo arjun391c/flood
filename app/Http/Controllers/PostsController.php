@@ -42,8 +42,7 @@ class PostsController extends Controller
             'phone'=>'required|numeric|digits:10',
             'dfname'=>'required',
             'dlname'=>'required',
-            'terms' => 'required',
-            'pincode' => 'required|numeric|digits:6'
+            'pincode' => 'nullable|numeric|digits:6'
         ]);
 
 
@@ -53,6 +52,7 @@ class PostsController extends Controller
         $post->phone = $request->input('phone');
         $post->email = $request->input('email');
         $post->doc = $request->input('doc');
+        $post->dno = $request->input('dno');
         $post->dfname = $request->input('dfname');
         $post->dlname = $request->input('dlname');
         $post->pincode = $request->input('pincode');
