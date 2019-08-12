@@ -67,11 +67,11 @@
 
         <div class="row">
                 <div class="col-md-6 mb-3">
-                   {{Form::label('dfname','Name')}}
+                   {{Form::label('dfname','First Name')}}
                   {{Form::text('dfname','',['class' =>'form-control','placeholder' =>'Enter Name'])}}
                     </div>
                     <div class="col-md-6 mb-3">
-                            {{Form::label('dlname','Name')}}
+                            {{Form::label('dlname','Last Name')}}
                             {{Form::text('dlname','',['class' =>'form-control','placeholder' =>'Enter Name'])}}
                     </div>
             </div>
