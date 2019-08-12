@@ -85,11 +85,7 @@
                 {{Form::date('dob','',['class' =>'form-control','placeholder' =>'Enter Name'])}}
             </div>
 
-        <div class="form-group">
-                    {{Form::label('age','Age')}}
-                    {{Form::number('age','',['class' =>'form-control','placeholder' =>'- -'])}}
-
-        </div>
+        
         <div class="form-group">
                 {{Form::label('pname','Parent name')}}
                 {{Form::text('pname','',['class' =>'form-control','placeholder' =>'Enter Name'])}}

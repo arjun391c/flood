@@ -57,7 +57,6 @@ class PostsController extends Controller
         $post->dlname = $request->input('dlname');
         $post->pincode = $request->input('pincode');
         $post->dob = $request->input('dob');
-        $post->age = $request->input('age');
         $post->pname = $request->input('pname');
 
         $post->save();
