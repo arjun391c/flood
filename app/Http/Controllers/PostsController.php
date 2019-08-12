@@ -52,7 +52,7 @@ class PostsController extends Controller
         $post->name = $request->input('name');
         $post->phone = $request->input('phone');
         $post->email = $request->input('email');
-        $post->doc = $request->input('aadhar');
+        $post->doc = $request->input('doc');
         $post->dfname = $request->input('dfname');
         $post->dlname = $request->input('dlname');
         $post->pincode = $request->input('pincode');
