@@ -21,7 +21,8 @@
 <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.2.3/js/responsive.jqueryui.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/jq-3.3.1/dt-1.10.18/kt-2.5.0/r-2.2.2/datatables.min.js"></script>
 
-
+<script>$('#chat-scroll').animate({
+        scrollTop: $('#chat-scroll').get(0).scrollHeight}, 500);           </script>
 
     <style>
         .bd-placeholder-img {
