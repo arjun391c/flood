@@ -59,7 +59,7 @@
 
                     <div class="jumbotron col-md-5 order-md-2 mb-6 ml-md-2">
                             <h4 class="d-flex justify-content-between align-items-center mb-3">
-                        <span class="text-muted">Search Details</span>
+                        <span class="text-muted">Search Results</span>
                       </h4>
                       <hr>
                       <ul class="list-group mb-3">
@@ -72,22 +72,35 @@
                         </li>
                         <li class="list-group-item d-flex justify-content-between lh-condensed">
                               <div>
-                                <strong><h6 class="my-0">Phone</h6></strong>
+                                <strong><h6 class="my-0">Document Type</h6></strong>
 
                               </div>
-                              <span class="text-muted">{{$post->phone}}</span>
+                              <span class="text-muted">{{$post->doc}}</span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between lh-condensed">
                               <div>
-                                <strong><h6 class="my-0">Email</h6></strong>
+                                <strong><h6 class="my-0">Pincode</h6></strong>
 
                               </div>
-                              @if ($post->email != NULL)
-                                  <span class="text-muted">{{$post->email}}</span>
-                              @else
-                                  <small class="text-muted">No email specified</small>
-                              @endif
-                         </li>
+                                  <small class="text-muted">{{$post->pincode}}</small>
+                        </li>
+
+                        <li class="list-group-item d-flex justify-content-between lh-condensed">
+                                <div>
+                                  <strong><h6 class="my-0">Date of Birth</h6></strong>
+
+                                </div>
+                                    <small class="text-muted">{{$post->dob}}</small>
+                          </li>
+                          <li class="list-group-item d-flex justify-content-between lh-condensed">
+                                <div>
+                                  <strong><h6 class="my-0">Parent Name</h6></strong>
+
+                                </div>
+                                    <small class="text-muted">{{$post->pname}}</small>
+                          </li>
+
+
 
 
                       </ul>

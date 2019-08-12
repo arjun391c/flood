@@ -45,6 +45,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
   </head>
   <body >
+        {{-- <img id="logo" src="{{url('/images/iedc_logo.png')}}"> --}}
         @include('inc.messages')
         @yield('content')
 
