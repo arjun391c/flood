@@ -121,8 +121,12 @@ body {
 }
 
 .chat-scroll {
-    position: absolute;
     top: 0px;
     bottom: 0px;
     overflow-y: auto;
+}
+
+tr,
+th {
+    color: black;
 }

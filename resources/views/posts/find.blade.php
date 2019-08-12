@@ -13,10 +13,10 @@
 
         <div class="row">
 
-                <div class="col-md-4 order-md-2 mb-4">
+                <div class="jumbotron col-md-5 order-md-2 mb-6 ml-md-2">
                         <h4 class="d-flex justify-content-between align-items-center mb-3">
-                          <span class="text-muted">Your cart</span>
-                          <span class="badge badge-secondary badge-pill">3</span>
+                          <span class="text-muted">Search here</span>
+
                         </h4>
                         <ul class="list-group mb-3">
                           <li class="list-group-item d-flex justify-content-between lh-condensed">
@@ -106,13 +106,13 @@
 
               {{ Form::close() }}
           </div> --}}
-          <div class="chat-body chat-scroll" id="chat-scroll">
-          <table id="data-table-keytable" class="table table-striped table-bordered">
+          <div class="jumbotron chat-body chat-scroll" id="chat-scroll" style="color:black">
+          <table id="data-table-keytable" class="table table-striped table-bordered" >
                 <thead>
-                    <tr>
+                    <tr style="color:black">
 
 
-                        <th class="text-nowrap">#</th>
+
                         <th class="text-nowrap">Document</th>
                         <th class="text-nowrap">Name</th>
                         <th class="text-nowrap">Contact</th>
@@ -164,13 +164,14 @@
                         responsive: true,
                         orderCellsTop: true,
                         fixedHeader: true,
-                        columns: [{
-                            "searchable": false,
-                            "orderable": true,
-                            'render': function(){
-                                return i++;
-                            }
-                        },
+                        columns: [
+                        //     {
+                        //     "searchable": false,
+                        //     "orderable": true,
+                        //     'render': function(){
+                        //         return i++;
+                        //     }
+                        // },
                         {
 
                             "orderable": false,
@@ -214,9 +215,9 @@
                         }
                         ]
                     });
-                    $('#data-table-keytable thead tr').clone(true).appendTo( '#data-table-keytable thead' );
+                    // $('#data-table-keytable thead tr').clone(true).appendTo( '#data-table-keytable thead' );
     $('#data-table-keytable thead tr:eq(1) th').each( function (i) {
-    if(i!=0 && i!=3){
+    if(i!=2){
         var title = $(this).text();
         $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
 
