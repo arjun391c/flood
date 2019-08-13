@@ -193,9 +193,13 @@
                   </div>
         </div>
     </div>
-    {{$errors}}
 
 </main>
+<script>
+    $('#navbarHeader').collapse({
+  toggle: false
+})
+    </script>
 <script>
 $(document).ready(()=>{
   var Errors = <?php echo $errors; ?>;
