@@ -223,7 +223,7 @@ $(document).ready(()=>{
 });
 
 var form = document.getElementsByClassName('needs-validation')[0];
-    $('#submit').click(()=>{
+    $('#submit').click((event)=>{
         if (form.checkValidity() == false) {
           event.preventDefault();
           event.stopPropagation();

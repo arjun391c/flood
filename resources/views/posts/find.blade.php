@@ -10,7 +10,27 @@
 #data-table-keytable{
   display: none;
 }
+.paginate_button{
+    padding: 3px;
+    margin-right: 2px;
+    color: black;
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+.paginate_button:hover{
+    text-decoration: none;
+    color: blue;
+    cursor: pointer;
+}
+
 </style>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="  crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/responsive/2.2.3/js/responsive.jqueryui.js"></script>
+{{-- <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/jq-3.3.1/dt-1.10.18/kt-2.5.0/r-2.2.2/datatables.min.js"></script> --}}
+
 <main role="main" class="inner cover" style="padding:20px">
     <div class="container">
         {{-- <div class="py-5 text-center">
@@ -22,14 +42,14 @@
 
         <div class="row mb-md-2" >
 
-               
 
-                        
+
+
                       </div>
 
-         
 
-           
+
+
           <div class="jumbotron chat-body chat-scroll" id="chat-scroll" style="color:black">
                 <h4 class="d-flex justify-content-between align-items-center mb-3">
                         <span class="text-muted">Search here</span>
@@ -46,7 +66,7 @@
                                 <!-- <p class="text-muted">Enter your name</p> -->
                                 <input type="text" id="name" class="form-control"/>
                           </div>
-                          
+
                           <div class="col-md-4">
                                 <h6 class="text-dark">Document Number</h6>
                                 <!-- <small class="text-muted">Brief description</small> -->
@@ -63,7 +83,7 @@
                                 <input type="text" id="pincode" class="form-control"/>
                           </div>
                       </div>
-                      
+
 
           <table id="data-table-keytable" class="table table-striped table-bordered" >
                 <thead>
@@ -81,7 +101,7 @@
                 <tbody>
 
                 </tbody>
-                
+
             </table>
 
         </div>
@@ -104,6 +124,10 @@
         //     }
         // ]
         // console.log({{$posts}})
+        $(document).ready(()=>{
+            var select = document.getElementsByTagName('select')[0];
+        select.classList.add('form-control');
+        })
 
         var data = <?php echo json_encode($posts); ?>;
         var i =1;
@@ -238,10 +262,10 @@
                     $('#data-table-keytable').css("display", "block");
             }
             if(($('#pincode').val() == "")&&($('#dob').val() == "")&&($('#dno').val() == "")&&($('#name').val() == "")&&($('#doc').val() == "")){
-          
+
           $('#data-table-keytable').css("display", "none");
     }
-            
+
         } );
         $('#doc').on( 'keyup change', function () {
             if ( table.column(1).search() !== this.value ) {
@@ -252,10 +276,10 @@
                     $('#data-table-keytable').css("display", "block");
             }
             if(($('#pincode').val() == "")&&($('#dob').val() == "")&&($('#dno').val() == "")&&($('#name').val() == "")&&($('#doc').val() == "")){
-          
+
           $('#data-table-keytable').css("display", "none");
     }
-            
+
         } );
         $('#dno').on( 'keyup change', function () {
             if ( table.column(0).search() !== this.value ) {
@@ -266,10 +290,10 @@
                     $('#data-table-keytable').css("display", "block");
             }
             if(($('#pincode').val() == "")&&($('#dob').val() == "")&&($('#dno').val() == "")&&($('#name').val() == "")&&($('#doc').val() == "")){
-          
+
           $('#data-table-keytable').css("display", "none");
     }
-            
+
         } );
         $('#dob').on( 'keyup change', function () {
             if ( table.column(3).search() !== this.value ) {
@@ -280,10 +304,10 @@
                     $('#data-table-keytable').css("display", "block");
             }
             if(($('#pincode').val() == "")&&($('#dob').val() == "")&&($('#dno').val() == "")&&($('#name').val() == "")&&($('#doc').val() == "")){
-          
+
           $('#data-table-keytable').css("display", "none");
     }
-            
+
         } );
         $('#pincode').on( 'keyup change', function () {
             if ( table.column(4).search() !== this.value ) {
@@ -294,13 +318,13 @@
                     $('#data-table-keytable').css("display", "block");
             }
             if(($('#pincode').val() == "")&&($('#dob').val() == "")&&($('#dno').val() == "")&&($('#name').val() == "")&&($('#doc').val() == "")){
-          
+
           $('#data-table-keytable').css("display", "none");
     }
-            
+
         } );
-       
-        
+
+
 
 //     var table = $('#example').DataTable( {
 //         orderCellsTop: true,

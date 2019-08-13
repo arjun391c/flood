@@ -10775,6 +10775,10 @@ h5 {
     margin-top: 80px;
     margin-left: 1.5em;
   }
+
+  .lets {
+    margin-top: 27vh;
+  }
 }
 
 @media only screen and (max-width: 899px) {
@@ -10791,6 +10795,10 @@ h5 {
 
   #row {
     margin-left: 0 !important;
+  }
+
+  .lets {
+    margin-top: 20vh;
   }
 }
 

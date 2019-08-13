@@ -7,7 +7,7 @@ body{
   overflow-y: hidden;
 }
 </style>
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto  flex-column" style="margin-top:10%">
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto  flex-column lets">
 
         <main role="main" class="jumbotron inner cover text-center" id="hmj">
           <h1 class="cover-heading text-center"  id="uptxt">LET'S FIND</h1>
