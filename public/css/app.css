@@ -10674,7 +10674,6 @@ a:hover {
 
 html,
 body {
-  height: 100%;
   background-color: #333;
   background-image: url("/images/bg.png") !important;
 }
@@ -10682,6 +10681,7 @@ body {
 body {
   color: #fff;
   text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 490px black;
 }
 
 .cover-container {
@@ -10770,9 +10770,9 @@ h5 {
 
 @media only screen and (min-width: 900px) {
   #logo {
-    width: 10em;
+    width: 15em;
     position: absolute;
-    margin-top: 1.5em;
+    margin-top: 80px;
     margin-left: 1.5em;
   }
 }
@@ -10782,8 +10782,15 @@ h5 {
     width: 10em;
     position: absolute;
     margin-top: 1.5em;
-    margin-left: 1.5em;
-    margin-right: 1em;
+    right: 2px;
+  }
+
+  #about {
+    margin: 0;
+  }
+
+  #row {
+    margin-left: 0 !important;
   }
 }
 
@@ -10801,5 +10808,17 @@ h5 {
   padding: 50px;
   border-radius: 10px;
   border: 2px solid #333;
+}
+
+#uptxt {
+  font-size: 3rem;
+  font-family: "Alegreya";
+  font-weight: 10rem;
+  text-align: justify;
+}
+
+#ld {
+  font-size: 1.5rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 

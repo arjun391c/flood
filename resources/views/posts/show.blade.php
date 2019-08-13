@@ -17,14 +17,14 @@
                         </h4>
                         <hr>
                         <ul class="list-group mb-3">
-                       
+
                           <li class="list-group-item d-flex justify-content-between lh-condensed">
                             <div>
                               <h6 class="my-0">Name</h6>
                             </div>
                             <span class="text-muted">{{$post->name}}</span>
                           </li>
-                         
+
                           <li class="list-group-item d-flex justify-content-between lh-condensed">
                                 <div>
                                   <strong><h6 class="my-0">Phone</h6></strong>
@@ -32,7 +32,7 @@
                                 </div>
                                 <span class="text-muted">{{$post->phone}}</span>
                           </li>
-                          
+
                           @if($post->email)
                           <li class="list-group-item d-flex justify-content-between lh-condensed">
                                 <div>

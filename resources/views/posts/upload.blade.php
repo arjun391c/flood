@@ -10,9 +10,9 @@
         <div class="col-md-3">
                 <div class=" justify-content-center ml-md-3 mt-md-5">
 
-                        <h2>Upload details</h2>
-                        <p class="lead">Let's help them Find</p>
-                      </div>
+                        <h2 id="uptxt">Upload details</h2>
+                        <p class="lead" >Let's help them Find</p>
+                </div>
         </div>
         <div class="col-md-9 " >
                 <div class="row " >
@@ -127,7 +127,7 @@
                                     Submit
                                   </button>
 
-                                  
+
                                       <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
                                           <div class="modal-content">
@@ -138,7 +138,7 @@
                                               </button>
                                             </div>
                                             <div class="modal-body" style="color: black;">
-                                            <p> 
+                                            <p>
                                             These <u>Terms and Conditions</u> ("Terms", "Terms and Conditions") govern your relationship with Let's Find website.
                                               Please read these Terms and Conditions carefully before using our website.Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the Service.
 
@@ -193,7 +193,7 @@
                   </div>
         </div>
     </div>
-    {{$errors}}
+
 
 </main>
 <script>
@@ -214,10 +214,10 @@ $(document).ready(()=>{
   if(Errors.pincode){
     $('#pincode').addClass('is-invalid');
   }
-  
-  
+
+
 });
- 
+
 var form = document.getElementsByClassName('needs-validation')[0];
     $('#submit').click(()=>{
         if (form.checkValidity() == false) {
@@ -239,7 +239,7 @@ var form = document.getElementsByClassName('needs-validation')[0];
         });
         console.log(string);
         $('#doc').val(string);
-        
+
         $('#exampleModalCenter').modal('show');
     });
 </script>

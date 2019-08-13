@@ -1,67 +1,83 @@
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-<!-- <header class="masthead mb-auto cover-container d-flex w-100  p-3 mx-auto flex-column">
-        <div class="inner">
-          <h3 class="masthead-brand">Lets Find</h3>
-          <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link active" href="/">Home</a>
-            <a class="nav-link" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">Contact</a>
-            <a class="nav-link" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">About</a>
-          </nav>
-        </div>
-        <div class="collapse mt-2" id="collapseExample1">
-        <div class="card card-body " id="hmj">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-        </div>
-      </div>
-      <div class="collapse mt-2" id="collapseExample2">
-        <div class="card card-body " id="hmj">
-        The continuous downpour of rain; that left the people of God's own country stunned and totally helpless. The uncalled waters swept away everything in its vicinity. In the milliseconds that the raging waters came through, it may have not been possible to get your hands on all the life dependent tools. Returning to our normal lives may become a bit more difficult without these items.
-
-Have you had your documents lost in the midst of these floods and wonder of you can get it back? Or have the documents of some one else fallen into your hands and you wish to return it? 
-
-We intent to help make your desire a little bit more easy to accomplish. Upload the document that you have found and the seekers will have the opportunity to search for their lost items.
-
-We hope that this venture will help you cross over the tide to a future with lesser losses of these floods.
-        </div>
-      </div>
-</header> -->
 <header>
   <div class="collapse bg-dark" id="navbarHeader">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-8 col-md-7 py-4">
-          <h4 class="text-white">About</h4>
-          <p class="text-muted" style="text-align: justify;">The continuous downpour of rain; that left the people of God's own country stunned and totally helpless. The uncalled waters swept away everything in its vicinity. In the milliseconds that the raging waters came through, it may have not been possible to get your hands on all the life dependent tools. Returning to our normal lives may become a bit more difficult without these items.
+    <div class="container-fluid row" id="row">
+        <div class="col-sm-3">
+                <img id="logo"  src="{{url('/images/iedc_logo.png')}}">
+        </div>
 
-Have you had your documents lost in the midst of these floods and wonder of you can get it back? Or have the documents of some one else fallen into your hands and you wish to return it? 
+        <div class="col-sm-9 py-4">
+          <h4 class="text-white">About</h4>
+          <p class="text-white" id="about" style="text-align: justify; font-size: 1.2em;">The continuous downpour of rain; that left the people of God's own country stunned and totally helpless. The uncalled waters swept away everything in its vicinity. In the milliseconds that the raging waters came through, it may have not been possible to get your hands on all the life dependent tools. Returning to our normal lives may become a bit more difficult without these items.
+
+Have you had your documents lost in the midst of these floods and wonder of you can get it back? Or have the documents of some one else fallen into your hands and you wish to return it?
 
 We intent to help make your desire a little bit more easy to accomplish. Upload the document that you have found and the seekers will have the opportunity to search for their lost items.
 
 We hope that this venture will help you cross over the tide to a future with lesser losses of these floods.</p>
         </div>
-        <div class="col-sm-4 offset-md-1 py-4">
-          <h4 class="text-white">Contact</h4>
-          <ul class="list-unstyled">
-            <!-- <li><a href="#" class="text-white">Follow on Twitter</a></li>
-            <li><a href="#" class="text-white">Like on Facebook</a></li>
-            <li><a href="#" class="text-white">Email me</a></li> -->
-          </ul>
-        </div>
-      </div>
+
     </div>
   </div>
+  <div class="collapse bg-dark" id="navbarHeader2">
+        <div class="container-fluid row" id="row">
+            <div class="col-sm-3">
+                    <img id="logo"  src="{{url('/images/iedc_logo.png')}}">
+            </div>
+
+            <div class="col-sm-9 py-4">
+              <h4 class="text-white">Contact</h4>
+              <div class="row">
+                    <div class="col-md-3" >
+                            <p class="text-white" id="about" style="text-align: justify; font-size: 1.2em;">Arjun C</p>
+                            <p class="text-white" id="about" style="text-align: justify; font-size: 1.2em;">Maker Space Head</p>
+
+                      </div>
+                      <hr>
+                      <div class="col-md-3">
+                            <p class="text-white" id="about" style="text-align: justify; font-size: 1.2em;">Sharook</p>
+                            <p class="text-white" id="about" style="text-align: justify; font-size: 1.2em;">CMO</p>
+                      </div>
+                      <hr>
+                      <div class="col-md-3" id="links">
+                            <p class="text-white" id="about" style="text-align: justify; font-size: 1.2em;">Arjun C</p>
+                            <p class="text-white" id="about" style="text-align: justify; font-size: 1.2em;">Maker Space Head</p>
+                      </div>
+                      <hr>
+              </div>
+
+
+            </div>
+
+
+        </div>
+      </div>
   <div class="navbar ">
     <div class="container d-flex justify-content-between">
       <a href="#" class="navbar-brand d-flex align-items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="mr-2" viewBox="0 0 24 24" focusable="false"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+         <img src="{{url('/images/file.png')}}" height="40" width="40" style=""/>&nbsp;&nbsp;
+
         <strong>Let's Find</strong>
       </a>
       <nav class="nav nav-masthead ml-auto">
             <a class="nav-link active" href="/">Home</a>
-            <a class="nav-link" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">Contact</a>
-            <a class="nav-link" data-toggle="collapse" href="#navbarHeader" role="button" aria-expanded="false" aria-controls="collapseExample2">About</a>
+            <a class="nav-link" id="contact" style="cursor: pointer;" >Contact</a>
+            <a class="nav-link" id="about1" style="cursor: pointer;">About</a>
           </nav>
     </div>
   </div>
 </header>
 
+<script>
+$('#contact').click(()=>{
+    $('#navbarHeader').collapse('hide');
+    $('#navbarHeader2').collapse('toggle');
+})
+$('#about1').click(()=>{
+    $('#navbarHeader2').collapse('hide');
+    $('#navbarHeader').collapse('toggle');
+})
+</script>
