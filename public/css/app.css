@@ -10831,7 +10831,9 @@ h5 {
 }
 
 #cap {
-  font-family: "";
+  font-family: "optima";
   font-weight: 10rem;
+  letter-spacing: 4px;
+  font-weight: 400;
 }
 
