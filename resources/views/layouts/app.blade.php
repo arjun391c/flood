@@ -6,7 +6,14 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
+    <meta name="description" content="Official Website to find the Documents lost in Kerala Flood by IEDC,TKM College of Engineering">
+		<meta name="keywords" content="IEDC,IEDC TKMCE,TKMCE,TKM College of engineering,IEDC Kerala,Kerala Startup mission,KSUM,Lets find,Letsfind,flood,kerala,documents find ">
     <title>Lets find</title>
+    {{-- <link rel = "icon" type = "image/png" src = "{{url('/images/iedc_logo.png')}}"> --}}
+    <link rel="icon" href="{!! asset('images/file.png') !!}"/>
+
+
+
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/cover/">
     <link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet'>

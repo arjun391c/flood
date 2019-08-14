@@ -4,7 +4,7 @@
 @section('content')
 <style>
 body{
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }
 </style>
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto  flex-column lets">
@@ -25,11 +25,6 @@ body{
           </p>
 
         </main>
-        <footer class="mastfoot mt-auto">
-                <div class="inner">
-                  <p><a href="https://getbootstrap.com/"></a> <a href="#"></a></p>
-                </div>
-         </footer>
 </div>
 
 
