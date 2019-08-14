@@ -10777,7 +10777,7 @@ h5 {
   }
 
   .lets {
-    margin-top: 27vh;
+    margin-top: 18vh;
   }
 }
 
@@ -10798,7 +10798,7 @@ h5 {
   }
 
   .lets {
-    margin-top: 20vh;
+    margin-top: 12vh;
   }
 }
 
@@ -10819,8 +10819,8 @@ h5 {
 }
 
 #uptxt {
-  font-size: 3rem;
-  font-family: "Alegreya";
+  font-size: 4rem;
+  font-family: "varela";
   font-weight: 10rem;
   text-align: justify;
 }
@@ -10828,5 +10828,10 @@ h5 {
 #ld {
   font-size: 1.5rem;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#cap {
+  font-family: "";
+  font-weight: 10rem;
 }
 

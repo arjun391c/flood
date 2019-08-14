@@ -11,7 +11,7 @@
 
         <div class="col-sm-9 py-4">
           <h4 class="text-white">About</h4>
-          <hr>
+          <hr style="background-color:white">
           <p class="text-white" id="about" style="text-align: justify; font-size: 1.2em;">The continuous downpour of rain; that left the people of God's own country stunned and totally helpless. The uncalled waters swept away everything in its vicinity. In the milliseconds that the raging waters came through, it may have not been possible to get your hands on all the life dependent tools. Returning to our normal lives may become a bit more difficult without these items.
 
 Have you had your documents lost in the midst of these floods and wonder of you can get it back? Or have the documents of some one else fallen into your hands and you wish to return it?
@@ -31,13 +31,24 @@ We hope that this venture will help you cross over the tide to a future with les
 
             <div class="col-sm-9 py-4">
               <h4 class="text-white">Contact</h4>
-              <hr>
+              <hr style="background-color:white">
               <div class="row">
+
+                    <div class="col-md-3 mb-3" >
+                            <h5 class="text-white" id="about" style="text-align: justify; font-size: 1.2em; font-weight:bold;">Vignesh R Babu</h5>
+                            <small class="text-white" id="about" style="text-align: justify; font-size: 1.2em;">Chief Executive Officer</small>
+                            <p class="text-white" id="about" style="text-align: justify; font-size: 1.2em;">IEDC TKMCE</p>
+                            <p class="text-white" id="about" style="text-align: justify; font-size: 1.2em;">Phone: 8301976198</p>
+
+
+
+                      </div>
+
                     <div class="col-md-3 mb-3" >
                             <h5 class="text-white" id="about" style="text-align: justify; font-size: 1.2em; font-weight:bold;">Arjun C</h5>
                             <small class="text-white" id="about" style="text-align: justify; font-size: 1.2em;">Maker Space Head</small>
                             <p class="text-white" id="about" style="text-align: justify; font-size: 1.2em;">IEDC TKMCE</p>
-                            <p class="text-white" id="about" style="text-align: justify; font-size: 1.2em;">Phone: 88487714937</p>
+                            <p class="text-white" id="about" style="text-align: justify; font-size: 1.2em;">Phone: 9633936951</p>
 
 
 

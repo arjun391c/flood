@@ -56,31 +56,33 @@
 
                       </h4>
                       <div class="row mb-2" >
-                      <div class="col-md-4">
-                                <h6 class="text-dark">Document Type</h6>
-                                <!-- <small class="text-muted">Brief description</small> -->
-                                <input type="text" id="doc" class="form-control"/>
-                          </div>
+
                           <div class="col-md-4">
                                 <h6 class=" text-dark">Name on document</h6>
                                 <!-- <p class="text-muted">Enter your name</p> -->
-                                <input type="text" id="name" class="form-control"/>
+                                <input type="text" id="name" class="form-control"placeholder="Enter Name"/>
+                          </div>
+
+                          <div class="col-md-4">
+                                <h6 class="text-dark">Document Type</h6>
+                                <!-- <small class="text-muted">Brief description</small> -->
+                                <input type="text" id="doc" class="form-control" placeholder="Aadhar/License/SSLC/ATM/Passport/.."/>
                           </div>
 
                           <div class="col-md-4">
                                 <h6 class="text-dark">Document Number</h6>
                                 <!-- <small class="text-muted">Brief description</small> -->
-                                <input type="text" id="dno" class="form-control"/>
+                                <input type="text" id="dno" class="form-control" placeholder="Enter Document Number"/>
                           </div>
                           <div class="col-md-4 mt-2">
-                                <h6 class="text-dark">DOB</h6>
+                                <h6 class="text-dark">Date Of Birth</h6>
                                 <!-- <small class="text-muted">Brief description</small> -->
-                                <input type="date" id="dob" class="form-control"/>
+                                <input type="date" id="dob" class="form-control" placeholder="Enter DOB"/>
                           </div>
                           <div class="col-md-4 mt-2">
                                 <h6 class="text-dark">Pincode</h6>
                                 <!-- <small class="text-muted">Brief description</small> -->
-                                <input type="text" id="pincode" class="form-control"/>
+                                <input type="text" id="pincode" class="form-control" placeholder="- - - - - - "/>
                           </div>
                       </div>
 

@@ -57,15 +57,15 @@
                                   <h4 class="mb-3">Document Type</h4><hr>
                                   <div class="col-lg-0">
                                       {{-- {{  Form::checkbox('doc', ['adhaar' => 'ADHAAR', 'license' => 'DRIVING LICENSE', 'id' => 'ID'],  '', ['class' => 'form-control' ]) }} --}}
-                                      {{ Form::checkbox('aadhar', 'aadhar',false, ['id'=>'aadhar','class'=>'check']) }}
+                                      {{ Form::checkbox('aadhar', 'Aadhar',false, ['id'=>'aadhar','class'=>'check']) }}
                                       {!! Form::label('aadhar', 'Aadhar Card') !!} <br>
-                                      {{ Form::checkbox('license', 'license',false, ['id'=>'license','class'=>'check']) }}
+                                      {{ Form::checkbox('license', 'License',false, ['id'=>'license','class'=>'check']) }}
                                       {!! Form::label('license', 'Driving License') !!} <br>
-                                      {{ Form::checkbox('sslc', 'sslc',false, ['id'=>'sslc','class'=>'check']) }}
+                                      {{ Form::checkbox('sslc', 'SSLC',false, ['id'=>'sslc','class'=>'check']) }}
                                       {!! Form::label('sslc', 'SSLC Certificate') !!} <br>
-                                      {{ Form::checkbox('atm', 'atm',false, ['id'=>'atm','class'=>'check']) }}
+                                      {{ Form::checkbox('atm', 'ATM',false, ['id'=>'atm','class'=>'check']) }}
                                       {!! Form::label('atm', 'ATM Card') !!} <br>
-                                      {{ Form::checkbox('passport', 'passport',false, ['id'=>'passport','class'=>'check']) }}
+                                      {{ Form::checkbox('passport', 'Passport',false, ['id'=>'passport','class'=>'check']) }}
                                       {!! Form::label('passport', 'Passport') !!} <br>
                                       {{ Form::checkbox('others', 'others',false, ['id'=>'others','class'=>'check']) }}
                                       {!! Form::label('others', 'Others') !!} <br>
@@ -93,11 +93,11 @@
                                       </div>
                               </div>
                               <div class="form-group">
-                                  {{Form::label('dno','Document Number')}}
-                                  {{Form::text('dno','',['class' =>'form-control','placeholder' =>'Enter document number'])}}
+                                  {{Form::label('dno','Document Number(optional)')}}
+                                  {{Form::text('dno','',['class' =>'form-control','placeholder' =>'Enter document number(Any one)'])}}
                           </div>
                           <div class="form-group">
-                                  {{Form::label('pincode','Pin Code')}}
+                                  {{Form::label('pincode','Pin Code(optional)')}}
                                   {{Form::number('pincode','',['class' =>'form-control','id'=>'pincode','placeholder' =>'- - - - - -'])}}
                                   <div class="invalid-feedback">
                                             Please enter a valid pincode.
@@ -105,12 +105,12 @@
                           </div>
 
                           <div class="form-group">
-                                  {{Form::label('dob','Date of Birth')}}
-                                  {{Form::date('dob','',['class' =>'form-control','placeholder' =>'Enter Name'])}}
+                                  {{Form::label('dob','Date of Birth(optional)')}}
+                                  {{Form::date('dob','',['class' =>'form-control','placeholder' =>'--/--/----'])}}
                               </div>
 
                           <div class="form-group">
-                                  {{Form::label('pname','Parent name')}}
+                                  {{Form::label('pname','Parent name(optional)')}}
                                   {{Form::text('pname','',['class' =>'form-control','placeholder' =>'Enter Name'])}}
                           </div>
                           {{Form::hidden('doc','',['class' =>'form-control','id'=>'doc','placeholder' =>'Enter Name'])}}
@@ -137,28 +137,16 @@
                                                 <span aria-hidden="true">&times;</span>
                                               </button>
                                             </div>
-                                            <div class="modal-body" style="color: black;">
+                                            <div class="modal-body text-justify" style="color: black;">
                                             <p>
                                             These <u>Terms and Conditions</u> ("Terms", "Terms and Conditions") govern your relationship with Let's Find website.
                                               Please read these Terms and Conditions carefully before using our website.Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the Service.
 
                                               By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access the Service.</p>
 
-                                              <p><u>Accounts</u></p>
+                                              <p><u>Self Declaration</u></p>
 
-                                              <p>When you create an account with us, you must provide us information that is accurate, complete, and current at all times. Failure to do so constitutes a breach of the Terms, which may result in immediate termination of your account on our Service.
-
-                                              You are responsible for safeguarding the password that you use to access the Service and for any activities or actions under your password, whether your password is with our Service or a third-party service.
-
-                                              You agree not to disclose your password to any third party. You must notify us immediately upon becoming aware of any breach of security or unauthorized use of your account.
-
-                                              You may not use as a username the name of another person or entity or that is not lawfully available for use, a name or trade mark that is subject to any rights of another person or entity other than you without appropriate authorization, or a name that is otherwise offensive, vulgar or obscene.</p>
-
-                                              <p><u>Termination</u></p>
-
-                                              <p>We may terminate or suspend your account immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms.
-
-                                              Upon termination, your right to use the Service will immediately cease. If you wish to terminate your account, you may simply discontinue using the Service.</p>
+                                              <p>I assert that the details mentioned by me in the upload form are true to the best of my knowledge. I don't have any intentions to tamper the service offered by team Let's Find by providing fake details. I further promise that I will sincerely handover the document(s) to the owner after verification.</p>
 
 
 
@@ -232,7 +220,7 @@ var form = document.getElementsByClassName('needs-validation')[0];
         var string = '';
         var selected = [];
         $('input:checked').each(function() {
-            selected.push($(this).attr('name'));
+            selected.push($(this).attr('value'));
         });
         selected.forEach((item)=>{
             if(item == "others"){
