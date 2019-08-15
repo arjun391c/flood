@@ -2,7 +2,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-<header>
+<header class="notranslate">
   <div class="collapse bg-dark" id="navbarHeader">
     <div class="container-fluid row" id="row">
         <div class="col-sm-3">
@@ -91,15 +91,17 @@ We hope that this venture will help you cross over the tide to a future with les
 
         <strong>Let's Find</strong>
       </a>
-      <nav class="nav nav-masthead ml-auto">
+      <nav class="nav nav-masthead ml-auto" id="navb">
             <a class="nav-link active" href="/">Home</a>
             <a class="nav-link" id="contact" style="cursor: pointer;" >Contact</a>
             <a class="nav-link" id="about1" style="cursor: pointer;">About</a>
-          </nav>
+
+       </nav>
     </div>
   </div>
-</header>
 
+</header>
+<div class="ml-3" id="google_translate_element" ></div>
 <script>
 $('#contact').click(()=>{
     $('#navbarHeader').collapse('hide');
@@ -110,3 +112,4 @@ $('#about1').click(()=>{
     $('#navbarHeader').collapse('toggle');
 })
 </script>
+

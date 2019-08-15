@@ -40,7 +40,7 @@
         </div> --}}
 
 
-        <div class="row mb-md-2" >
+        <div class="row mb-md-2 " >
 
 
 
@@ -50,9 +50,9 @@
 
 
 
-          <div class="jumbotron chat-body chat-scroll" id="chat-scroll" style="color:black">
+          <div class="jumbotron chat-body chat-scroll mt-5" id="chat-scroll" style="color:black">
                 <h4 class="d-flex justify-content-between align-items-center mb-3">
-                        <span class="text-muted">Search here</span>
+                        <span class="text-muted">Search here<span style="font-size:1rem">(Try with random entries)</span></span>
 
                       </h4>
                       <div class="row mb-2" >
@@ -87,7 +87,7 @@
                       </div>
 
 
-          <table id="data-table-keytable" class="table table-striped table-bordered" >
+          <table id="data-table-keytable" class="table table-striped table-bordered notranslate"  >
                 <thead>
                     <tr style="color:black">
 

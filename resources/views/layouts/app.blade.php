@@ -33,7 +33,6 @@
 
 <!-- <script>$('#chat-scroll').animate({
         scrollTop: $('#chat-scroll').get(0).scrollHeight}, 500);           </script> -->
-
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -55,6 +54,15 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
   </head>
   <body >
+
+
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage:  'en' ,includedLanguages: 'en,ml', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+    </script>
+
+    <script type="text/javascript"  src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
         {{-- <img id="logo" src="{{url('/images/iedc_logo.png')}}"> --}}
         @include('inc.messages')

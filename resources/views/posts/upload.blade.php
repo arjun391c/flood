@@ -7,8 +7,8 @@
 <main role="main" class="inner cover" >
 <div class="container-fluid" id="">
     <div class="row">
-        <div class="col-md-3">
-                <div class=" justify-content-center ml-md-3 mt-md-5">
+        <div class="col-md-3 mt-5">
+                <div class=" justify-content-center ml-md-3 mt-md-5 notranslate ">
 
                         <h2 id="uptxt">Upload details</h2>
                         <p class="lead" >Let's help them Find</p>
@@ -23,7 +23,7 @@
                           <div class="form-group">
                                           {{Form::label('name','Name')}}
                                          {{Form::text('name','',['class' =>'form-control','id'=>'name' ,'placeholder' =>'Enter Name', 'required'=>true])}}
-                                         <div class="invalid-feedback">
+                                         <div class="invalid-feedback ">
                                             Please enter a name.
                                         </div>
 
@@ -79,14 +79,14 @@
                           <div class="row">
                                   <div class="col-md-6 mb-3">
                                      {{Form::label('dfname','First Name')}}
-                                    {{Form::text('dfname','',['class' =>'form-control','id'=>'dfname','placeholder' =>'Enter Name', 'required'=>true])}}
+                                    {{Form::text('dfname','',['class' =>'form-control','id'=>'dfname','placeholder' =>'Enter Name', 'required'=>true,'autocomplete' => 'off'])}}
                                     <div class="invalid-feedback">
                                             Please enter a first name.
                                         </div>
                                       </div>
                                       <div class="col-md-6 mb-3">
                                               {{Form::label('dlname','Last Name')}}
-                                              {{Form::text('dlname','',['class' =>'form-control','id'=>'dlname','placeholder' =>'Enter Name', 'required'=>true])}}
+                                              {{Form::text('dlname','',['class' =>'form-control','id'=>'dlname','placeholder' =>'Enter Name', 'required'=>true,'autocomplete' => 'off'])}}
                                               <div class="invalid-feedback">
                                             Please enter a last name.
                                         </div>
@@ -94,11 +94,11 @@
                               </div>
                               <div class="form-group">
                                   {{Form::label('dno','Document Number(optional)')}}
-                                  {{Form::text('dno','',['class' =>'form-control','placeholder' =>'Enter document number(Any one)'])}}
+                                  {{Form::text('dno','',['class' =>'form-control','placeholder' =>'Enter document number(Any one)','autocomplete' => 'off'])}}
                           </div>
                           <div class="form-group">
                                   {{Form::label('pincode','Pin Code(optional)')}}
-                                  {{Form::number('pincode','',['class' =>'form-control','id'=>'pincode','placeholder' =>'- - - - - -'])}}
+                                  {{Form::number('pincode','',['class' =>'form-control','id'=>'pincode','placeholder' =>'- - - - - -','autocomplete' => 'off'])}}
                                   <div class="invalid-feedback">
                                             Please enter a valid pincode.
                                         </div>
@@ -106,12 +106,12 @@
 
                           <div class="form-group">
                                   {{Form::label('dob','Date of Birth(optional)')}}
-                                  {{Form::date('dob','',['class' =>'form-control','placeholder' =>'--/--/----'])}}
+                                  {{Form::date('dob','',['class' =>'form-control','placeholder' =>'--/--/----','autocomplete' => 'off'])}}
                               </div>
 
                           <div class="form-group">
                                   {{Form::label('pname','Parent name(optional)')}}
-                                  {{Form::text('pname','',['class' =>'form-control','placeholder' =>'Enter Name'])}}
+                                  {{Form::text('pname','',['class' =>'form-control','placeholder' =>'Enter Name','autocomplete' => 'off'])}}
                           </div>
                           {{Form::hidden('doc','',['class' =>'form-control','id'=>'doc','placeholder' =>'Enter Name'])}}
 
@@ -139,7 +139,7 @@
                                             </div>
                                             <div class="modal-body text-justify" style="color: black;">
                                             <p>
-                                            These <u>Terms and Conditions</u> ("Terms", "Terms and Conditions") govern your relationship with Let's Find website.
+                                            These <u>Terms and Conditions</u> ("Terms", "Terms and Conditions") govern your relationship with <span class="notranslate">www.letsfindit.in </span> Find website.
                                               Please read these Terms and Conditions carefully before using our website.Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the Service.
 
                                               By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access the Service.</p>

@@ -3,15 +3,15 @@
 
 @section('content')
 <div class="container">
-        <div class="py-5 text-center">
+        <div class="py-5 " id="uptxt">
 
-          <h2>Details</h2>
+          <h2 style="font-size:3rem;">Details</h2>
           {{-- <p class="lead">Lets know your details</p> --}}
         </div>
 
-        <div class="row">
+        <div class="row " >
 
-                <div class="jumbotron col-md-5  mb-6 mr-md-5">
+                <div class="jumbotron col-md-5  mb-6 mr-md-5 ">
                         <h4 class="d-flex justify-content-between align-items-center mb-3">
                           <span class="text-muted">Whom to Contact</span>
                         </h4>
@@ -20,29 +20,29 @@
 
                           <li class="list-group-item d-flex justify-content-between lh-condensed">
                             <div>
-                              <h6 class="my-0">Name</h6>
+                              <h6 class="my-0 n">Name</h6>
                             </div>
-                            <span class="text-muted">{{$post->name}}</span>
+                            <span class="text-muted notranslate">{{$post->name}}</span>
                           </li>
 
                           <li class="list-group-item d-flex justify-content-between lh-condensed">
                                 <div>
-                                  <strong><h6 class="my-0">Phone</h6></strong>
+                                  <strong><h6 class="my-0 ">Phone</h6></strong>
 
                                 </div>
-                                <span class="text-muted">{{$post->phone}}</span>
+                                <a href="tel:+91{{$post->phone}}"><span class="text-muted">{{$post->phone}}</span></a>
                           </li>
 
                           @if($post->email)
                           <li class="list-group-item d-flex justify-content-between lh-condensed">
                                 <div>
-                                  <strong><h6 class="my-0">Email</h6></strong>
+                                  <strong><h6 class="my-0 ">Email</h6></strong>
 
                                 </div>
                                 @if ($post->email != NULL)
                                     <span class="text-muted">{{$post->email}}</span>
                                 @else
-                                    <small class="text-muted">No email specified</small>
+                                    <small class="text-muted notranslate">No email specified</small>
                                 @endif
                            </li>
                            @endif
@@ -62,19 +62,19 @@
                       @if($post->dfname)
                         <li class="list-group-item d-flex justify-content-between lh-condensed">
                           <div>
-                            <h6 class="my-0">Name as on document</h6>
+                            <h6 class="my-0 ">Name as on document</h6>
 
                           </div>
-                          <span class="text-muted">{{$post->dfname}}. {{$post->dlname}}</span>
+                          <span class="text-muted notranslate">{{$post->dfname}}. {{$post->dlname}}</span>
                         </li>
                         @endif
                         @if($post->doc)
                         <li class="list-group-item d-flex justify-content-between lh-condensed">
                               <div>
-                                <strong><h6 class="my-0">Document Type</h6></strong>
+                                <strong><h6 class="my-0 ">Document Type</h6></strong>
 
                               </div>
-                              <span class="text-muted">{{$post->doc}}</span>
+                              <span class="text-muted notranslate">{{$post->doc}}</span>
                         </li>
                         @endif
                         @if($post->pincode)
@@ -83,7 +83,7 @@
                                 <strong><h6 class="my-0">Pincode</h6></strong>
 
                               </div>
-                                  <small class="text-muted">{{$post->pincode}}</small>
+                                  <small class="text-muted notranslate">{{$post->pincode}}</small>
                         </li>
                         @endif
                         @if($post->dob)
@@ -93,7 +93,7 @@
                                   <strong><h6 class="my-0">Date of Birth</h6></strong>
 
                                 </div>
-                                    <small class="text-muted">{{$post->dob}}</small>
+                                    <small class="text-muted notranslate">{{$post->dob}}</small>
                           </li>
                           @endif
                         @if($post->pname)
@@ -102,7 +102,7 @@
                                   <strong><h6 class="my-0">Parent Name</h6></strong>
 
                                 </div>
-                                    <small class="text-muted">{{$post->pname}}</small>
+                                    <small class="text-muted notranslate">{{$post->pname}}</small>
                           </li>
                           @endif
 

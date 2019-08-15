@@ -10799,6 +10799,10 @@ h5 {
   .lets {
     margin-top: 12vh;
   }
+
+  #google_translate_element {
+    margin-bottom: 12px;
+  }
 }
 
 #jmb {
@@ -10834,5 +10838,51 @@ h5 {
   font-weight: 10rem;
   letter-spacing: 4px;
   font-weight: 400;
+}
+
+.goog-te-gadget {
+  letter-spacing: -1;
+  font-size: 0.1rem;
+}
+
+.goog-te-gadget-simple {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  border: 1px solid rgba(255, 255, 255, 0) !important;
+  padding: 3px !important;
+  border-radius: 4px !important;
+  font-size: 1rem !important;
+  line-height: 1.1rem !important;
+  cursor: pointer;
+}
+
+.goog-te-menu-value {
+  color: #fff !important;
+}
+
+.goog-te-gadget-icon {
+  background-image: url(https://placehold.it/32) !important;
+  background-position: 0px 0px;
+  height: 22px !important;
+  width: 32px !important;
+  margin-right: 8px !important;
+  display: none;
+}
+
+.goog-te-gadget {
+  font-family: "varela";
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
+body {
+  top: 0px !important;
+}
+
+#google_translate_element {
+  position: absolute;
 }
 
