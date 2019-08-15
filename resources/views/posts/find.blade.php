@@ -224,7 +224,7 @@
                             'data': 'id',
                             'render': function(id){
                                 if(id){
-                                    return `<a href='/posts/${id}'  class='btn btn-success'>View</a>`
+                                    return `<a href='/find/${id}'  class='btn btn-success'>View</a>`
                                 }else{
                                     return `<a href="#"  class='btn btn-success'>View</a>`
                                 }

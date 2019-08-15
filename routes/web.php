@@ -14,11 +14,11 @@
 
 Route::get('/', 'PagesController@index');
 
-Route::get('/posts/upload', function () {
+Route::get('/upload', function () {
     return view('posts.upload');
 });
 
 
 
 
-Route::resource('posts', 'PostsController');
+Route::resource('find', 'PostsController');

@@ -20,8 +20,8 @@ body{
           <br>
 
           <p class="lead">
-            <a href="/posts/upload" class="btn btn-lg  btn-primary  ">Upload</a>
-            <a href="/posts" class="btn  btn-lg btn-success ml-3  " style="width:6.3rem" >Find</a>
+            <a href="/upload" class="btn btn-lg  btn-primary  ">Upload</a>
+            <a href="/find" class="btn  btn-lg btn-success ml-3  " style="width:6.3rem" >Find</a>
           </p>
 
         </main>
